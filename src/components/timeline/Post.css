@@ -1,0 +1,72 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+	margin-right: 20px;
+}
+
+.post--body {
+  flex: 1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.post--body > img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.post--footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+	color: var(--twitter-color);
+	margin-bottom: 10px;
+}
+
+.post--headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+	text-align: left;
+}
+
+.post--headerText > h3 {
+  font-size: 13px;
+  margin-bottom: 5px;
+	text-align: left;
+	font-weight: 600;
+	/* color: var(--twitter-color); */
+}
+
+.post--text {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.post--badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+}
+
+.post--headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+
+.post--avatar {
+  padding: 15px;
+}
+
+.post--avatarImage {
+	width: 40px;
+	height: 40px;
+}
+
+img[src=""] {
+  display: none;
+}

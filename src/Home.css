@@ -1,0 +1,103 @@
+body {
+	--twitter-color: #10a5d4;
+	--twitter-background: #e6ecf0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin: 0 0;
+  padding: 0 10px;
+	min-width: 600px;
+}
+
+/* スマートフォン向けのスタイル (幅が600px以下のデバイス) */
+@media (max-width: 600px) {
+	.sidebar {
+		display:none;
+	}
+	.timeline {
+		width: 100%;
+		height: 100%;
+	}
+	.widgets {
+		display:none;
+	}
+	/* その他のスマートフォン向けスタイル */
+}
+
+/* タブレット向けのスタイル (幅が600px以上、1024px以下のデバイス) */
+@media (min-width: 601px) and (max-width: 1024px) {
+	.sidebar {
+		width: 5%;
+	}
+	.timeline {
+		width: 85%;
+	}
+	.widgets {
+		width: 10%;
+	}
+	/* その他のタブレット向けスタイル */
+}
+
+/* デスクトップ向けのスタイル (幅が1025px以上のデバイス) */
+@media (min-width: 1025px) {
+	.sidebar {
+		width: 100%;
+	}
+	.timeline {
+		width: 100%;
+	}
+	.widgets {
+		width: 100%;
+	}
+	/* その他のデスクトップ向けスタイル */
+}
+
+.login {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.loginWrapper {
+	width: 70%;
+	height: 70%;
+	/* display: flex; */
+}
+
+/* .loginLeft,
+.loginRight {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+.loginLogo {
+	font-size: 50px;
+	font-weight: 800;
+	color: #41bbe8;
+	margin-bottom: 10px;
+}
+
+.loginDesc {
+	font-size: 24px;
+}
+
+.loginRegisterButton {
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background-color: #e4e13f;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 18px 19px 20px -17px #7996d7;
+	border-radius: 15px;
+}
